@@ -6,8 +6,8 @@ import jakarta.persistence.Id
 import jakarta.persistence.Table
 import jakarta.persistence.GeneratedValue
 import jakarta.persistence.GenerationType
-import jakarta.validation.constraints.NotBlank
-import jakarta.validation.constraints.Positive
+
+import jakarta.validation.constraints.*
 
 @Entity
 @Table(name = "actores")
@@ -18,10 +18,11 @@ data class Actor (
     @Column(name = "id_actor")
     val id: Long = 0,
 
-    @NotBlank
-    var nombre: String,
+    @field:NotBlank
+    // @NotBlank
+    var nombre: String = "",
 
-    @Positive
+    @field:Positive
     var edad: Int,
 
 )

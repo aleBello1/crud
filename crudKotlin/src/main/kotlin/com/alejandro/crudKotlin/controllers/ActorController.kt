@@ -37,7 +37,7 @@ class ActorController(
     // Guardar un nuevo actor
     @PostMapping
     fun saveActor(
-        @Valid @RequestBody actor: Actor,
+        @RequestBody @Valid actor: Actor,
         result: BindingResult
     ): ResponseEntity<*> {
         if (result.hasFieldErrors()) {
