@@ -1,8 +1,8 @@
 package com.alejandro.crudKotlin.repositories
 
-import com.alejandro.crudKotlin.entities.Pelicula
+import com.alejandro.crudKotlin.entities.Actor
 import org.springframework.data.jpa.repository.JpaRepository
 
-interface PeliculaRepository : JpaRepository<Pelicula, Long> {
+interface ActorRepository : JpaRepository<Actor, Long> {
 
 }
