@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "981e178a-ba41-4d80-8c8b-31691d98ea0e",
+		"_postman_id": "418f7262-402f-493c-913e-1e5cc2e7c7e1",
 		"name": "cine",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "46944597",
-		"_collection_link": "https://telecoms-administrator-82446008-2957368.postman.co/workspace/MARTIN-ALEJANDRO-GRANADOS-BELLO~137692b1-9ef0-4fcb-840f-2d010a35161a/collection/46944597-981e178a-ba41-4d80-8c8b-31691d98ea0e?action=share&source=collection_link&creator=46944597"
+		"_collection_link": "https://telecoms-administrator-82446008-2957368.postman.co/workspace/CRUD~269c5e66-4f2c-45b7-b189-26914fee3700/collection/46944597-418f7262-402f-493c-913e-1e5cc2e7c7e1?action=share&source=collection_link&creator=46944597"
 	},
 	"item": [
 		{
@@ -81,6 +81,43 @@
 						"api",
 						"actores",
 						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post html",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/alejandro/Downloads/main.html"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/html/upload-html",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"html",
+						"upload-html"
 					]
 				}
 			},
